@@ -1,8 +1,8 @@
-import { merge } from 'webpack-merge'
-import common from './webpack.common'
-import MiniCssExtractPlugin from 'mini-css-extract-plugin'
-import { CleanWebpackPlugin } from 'clean-webpack-plugin'
-import TerserPlugin from 'terser-webpack-plugin'
+const { merge } = require('webpack-merge')
+const common = require('./webpack.common')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
 const prodConfig = {
   mode: 'production',
@@ -30,4 +30,4 @@ const prodConfig = {
   ],
 }
 
-export default merge(common, prodConfig)
+module.exports = merge(common, prodConfig)
