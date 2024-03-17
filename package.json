@@ -5,7 +5,7 @@
   "repository": "https://github.com/ingaAdejanova/app-example.git",
   "scripts": {
     "start": "webpack serve --config config/webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack --config config/webpack.prod.js",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
     "format": "prettier --write \"**/*.ts\" \"**/*.tsx\"",

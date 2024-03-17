@@ -4,7 +4,7 @@ const path = require('path')
 const config = {
   entry: './src/index.tsx',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '../dist'),
     filename: '[name].[contenthash].js',
     chunkFilename: '[name].[contenthash].js',
   },
