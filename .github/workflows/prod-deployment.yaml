@@ -31,7 +31,7 @@ jobs:
         run: yarn install
 
       - name: Build for production
-        run: yarn build:prod
+        run: yarn build
 
       - name: Deploy to production server
         run: |

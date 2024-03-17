@@ -7,8 +7,9 @@ const devConfig = {
   devtool: 'inline-source-map',
   devServer: {
     static: {
-      directory: path.resolve(__dirname, 'dist'),
+      directory: path.join(__dirname, 'dist'),
     },
+    historyApiFallback: true,
     hot: true,
   },
   module: {

@@ -6,8 +6,9 @@ This repository showcases an example application.
 
 - TypeScript
 - React
-- CSS-In-JS
+- Styled components
 - Webpack
+- SWR
 
 ## Getting Started
 

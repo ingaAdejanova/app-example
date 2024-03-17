@@ -31,7 +31,7 @@ jobs:
         run: yarn install
 
       - name: Build for development
-        run: yarn build:dev
+        run: yarn build
 
       - name: Deploy to development server
         run: |
