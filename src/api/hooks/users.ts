@@ -12,13 +12,13 @@ type User = {
 type UseUsersResult = {
   users: User[]
   isLoading: boolean
-  isError: any
+  isError: Error | null
 }
 
 type UseUserResult = {
   user: User
   isLoading: boolean
-  isError: any
+  isError: Error | null
 }
 
 export const useUsers = (): UseUsersResult => {

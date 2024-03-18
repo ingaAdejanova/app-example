@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { usePosts } from '../../api/hooks/posts'
-import { colors } from '../../theme/colors'
+import theme from '../../theme'
 
 const Container = styled.div`
   max-width: 800px;
@@ -9,7 +9,7 @@ const Container = styled.div`
 `
 
 const Post = styled.div`
-  background-color: ${colors.lightGray};
+  background-color: ${theme.colors.lightGray};
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
@@ -17,12 +17,12 @@ const Post = styled.div`
 `
 
 const Title = styled.h2`
-  color: ${colors.black};
+  color: ${theme.colors.black};
   margin-bottom: 10px;
 `
 
 const Body = styled.p`
-  color: ${colors.gray};
+  color: ${theme.colors.gray};
 `
 
 const Loading = styled.div`
@@ -32,14 +32,14 @@ const Loading = styled.div`
 `
 
 const Error = styled.div`
-  color: ${colors.red};
+  color: ${theme.colors.red};
   font-size: 18px;
   margin-top: 20px;
 `
 
 const LoadMoreButton = styled.button`
-  background-color: ${colors.primary};
-  color: ${colors.white};
+  background-color: ${theme.colors.primary};
+  color: ${theme.colors.white};
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -47,7 +47,7 @@ const LoadMoreButton = styled.button`
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: ${colors.secondary};
+    background-color: ${theme.colors.secondary};
   }
 `
 

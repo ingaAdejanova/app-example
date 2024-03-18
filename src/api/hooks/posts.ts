@@ -12,7 +12,7 @@ type Post = {
 type UsePostsResult = {
   posts: Post[]
   isLoading: boolean
-  isError: any
+  isError: Error | null
   isReachingEnd: boolean
   size: number
   fetchMore: () => void

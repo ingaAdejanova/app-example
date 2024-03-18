@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { useParams } from 'react-router-dom'
 import { useUser } from '../../api/hooks/users'
-import { colors } from '../../theme/colors'
+import theme from '../../theme'
 
 const Container = styled.div`
-  border: 1px solid ${colors.gray};
+  border: 1px solid ${theme.colors.gray};
   border-radius: 5px;
   padding: 20px;
   margin: 20px auto;
@@ -13,7 +13,7 @@ const Container = styled.div`
 `
 
 const UserTitle = styled.h1`
-  color: ${colors.black};
+  color: ${theme.colors.black};
   font-size: 24px;
   margin-bottom: 10px;
 `

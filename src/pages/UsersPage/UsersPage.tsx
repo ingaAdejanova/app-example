@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { useUsers } from '../../api/hooks/users'
-import { colors } from '../../theme/colors'
+import theme from '../../theme'
 import { ROUTES } from '../../routes'
 
 const Container = styled.div`
@@ -10,7 +10,7 @@ const Container = styled.div`
 `
 
 const Title = styled.h1`
-  color: ${colors.black};
+  color: ${theme.colors.black};
   font-size: 36px;
   margin-bottom: 20px;
 `
@@ -21,7 +21,7 @@ const UserList = styled.ul`
 `
 
 const UserItem = styled.li`
-  background-color: ${colors.lightGray};
+  background-color: ${theme.colors.lightGray};
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
@@ -29,23 +29,23 @@ const UserItem = styled.li`
 `
 
 const UserName = styled.h2`
-  color: ${colors.black};
+  color: ${theme.colors.black};
   font-size: 24px;
   margin-bottom: 10px;
 `
 
 const UserEmail = styled.p`
-  color: ${colors.gray};
+  color: ${theme.colors.gray};
   font-size: 16px;
 `
 
 const UserLink = styled(Link)`
   text-decoration: none;
-  color: ${colors.primary};
+  color: ${theme.colors.primary};
   transition: color 0.3s ease;
 
   &:hover {
-    color: ${colors.secondary};
+    color: ${theme.colors.secondary};
   }
 `
 
